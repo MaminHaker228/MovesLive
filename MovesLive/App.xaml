@@ -1,12 +1,16 @@
 <Application x:Class="MovesLive.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:MovesLive.Converters"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/Theme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Converters -->
+            <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
